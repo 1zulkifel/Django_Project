@@ -1,0 +1,20 @@
+Command for creating super user for admin.
+**** Migrations commmands****
+1; pyhton manage.py makemigrations
+2; python manage.py migrate
+3; python manage.py createsuperuser
+4: python manage.py runserver
+**to SQl**
+1; python manage.py sqlmirate blog 0001
+** django orm shell**
+1; python manage.py shell
+2; from blog.models import post
+3; from django.contrib.auth.models import User
+4; User.objects.all()
+5; User.objects.first()
+6; User.objects.filter(username='zulkifel')
+7; User.objects.filter(username='zulkifel').first
+8; user=user.objects.filter(username='zulkifel').first
+9;user.id
+10; user.pk
+11; user=user.objects.get(id=1"
